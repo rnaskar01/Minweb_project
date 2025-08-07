@@ -1,6 +1,7 @@
-// src/store/dataSourceSlice.ts
 import { createSlice } from '@reduxjs/toolkit';
 import type { PayloadAction } from '@reduxjs/toolkit';
+
+
 
 interface ColorRule {
   operator: string;     // e.g. "<", ">", "between"

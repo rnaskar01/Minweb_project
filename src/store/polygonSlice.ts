@@ -1,4 +1,3 @@
-// src/store/polygonSlice.ts
 import { createSlice } from "@reduxjs/toolkit";
 import type { PayloadAction } from '@reduxjs/toolkit';
 
@@ -44,8 +43,11 @@ const polygonSlice = createSlice({
         poly.color = action.payload.color;
       }
     },
+    removePolygon(state, action: PayloadAction<string>) {
+      state.polygons = state.polygons.filter((poly) => poly.id !== action.payload);
+    },
   },
 });
 
-export const { addPolygon, updatePolygonValue, updatePolygonColor } = polygonSlice.actions;
+export const { addPolygon, updatePolygonValue, updatePolygonColor,removePolygon } = polygonSlice.actions;
 export default polygonSlice.reducer;

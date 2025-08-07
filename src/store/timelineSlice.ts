@@ -8,7 +8,7 @@ interface TimelineState {
 }
 
 const initialState: TimelineState = {
-  timeRange: [360, 370], // Example: middle 10 hours
+  timeRange: [0, 168], // Example: middle 10 hours
 };
 
 const timelineSlice = createSlice({

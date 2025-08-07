@@ -1,4 +1,3 @@
-// src/utils/color.ts
 type Rule = {
   operator: string;
   value1: number;
