@@ -1,4 +1,3 @@
-import { ChartBarIcon } from '@heroicons/react/24/solid'; // Make sure to install Heroicons
 import React from 'react';
 
 const Navbar: React.FC = () => {

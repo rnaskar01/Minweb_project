@@ -1,5 +1,3 @@
-import dayjs from 'dayjs';
-
 export async function fetchTemperature(
   lat: number,
   lon: number,
